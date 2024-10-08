@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.loading-text {
+    font-family: "Italianno", cursive;
+font-weight: 400;
+font-style: normal;  
+  font-size: 78px;
+  margin-bottom: 20px;
+}
+
+.loading-bar-container {
+  width: 100%;
+  max-width: 300px; /* Limits the width of the loading bar */
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.loading-bar {
+    border-radius: 5px;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  transition: width 3s ease; /* Bar animation for 3 seconds */
+}
+
+/* Main Content */
+.main-content {
+  display: none; /* Initially hidden */
+  height: 100vh;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.column h1 {
+  font-size: 36px;
+}
+::-webkit-scrollbar{
+    scroll-behavior: none;
+}
+/* hey  */
+body {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* Hide scroll bars for the entire webpage */
+    }
+
+    .editor {
+        margin: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Add padding around the editor section */
+    }
+
+    .frame {
+        padding-top: 20px;
+        flex: 1; /* Equally distribute space among frames */
+        margin-left: 5px;
+        box-sizing: border-box;
+        resize: vertical; /* Allows resizing */
+        background-color: #000000; /* Darker background for frames */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle box shadow */
+        border: 2px solid transparent; /* Transparent border initially */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frame:focus-within {
+        border: 2px solid white; /* White border when any textarea is focused */
+    }
+
+    #output {
+        height: 95%;
+    }
+
+    .output {
+        margin: 30px;
+        color: black;
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle box shadow */
+        border: 2px solid transparent; /* Transparent border initially */
+    }
+
+    .textarea-wrapper {
+        overflow:hidden; /* Enable vertical scrolling */
+        flex: 1; /* Fill available space */
+        margin: 5px; /* Space around textarea */
+    }
+
+    textarea {
+        color: white;
+        border: none;
+        width: 100%; /* Take full width */
+        height: 100%;
+        outline: none;
+        resize: none; /* Disable resizing */
+        font-family: monospace; /* Use monospace font for code */
+        background-color: #212121;
+        overflow: hidden; /* Hide scroll bar */
+        border-radius: 4px; /* Rounded corners */
+        padding: 10px; /* Add padding inside text areas */
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        overflow: hidden; 
+        border-radius: 4px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow for the iframe */
+    }
+
+    h2 {
+      padding: 0 20px;
+        margin: 0 0 10px 0; 
+        font-size: 18px; 
+    }
